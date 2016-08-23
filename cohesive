@@ -10,7 +10,7 @@ wget --no-check-certificate https://clientpack:fcd6a75b21ab05090c7c6ba08c5b84500
  
 cp 172_31_1_17.conf /etc/openvpn/
  
-ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_9.service 
+ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_17.service 
 
 systemctl enable openvpn@172_31_1_17.service
 
