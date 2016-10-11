@@ -10,8 +10,8 @@ wget --no-check-certificate https://clientpack:a7c0e3c685fdd96872edd3881686c29ab
  
 cp 172_31_1_197.conf /etc/openvpn/
 
-echo >> redirect-gateway def1 /etc/openvpn/172_31_1_197.conf
-echo >> route 10.148.80.0 255.255.255.0 net_gateway /etc/openvpn/172_31_1_197.conf
+echo "redirect-gateway def1" >> /etc/openvpn/172_31_1_197.conf
+echo "route 10.148.80.0 255.255.255.0 net_gateway" >>  /etc/openvpn/172_31_1_197.conf 
  
 ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_197.service 
 
