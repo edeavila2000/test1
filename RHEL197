@@ -17,4 +17,4 @@ ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_
 
 systemctl enable openvpn@172_31_1_197.service
 
-systemctl start openvpn@172_31_1_197.servic
+systemctl start openvpn@172_31_1_197.service
