@@ -6,7 +6,7 @@ rpm -ivh epel-release-7-8.noarch.rpm
 
 yum -y install openvpn
 
-wget --no-check-certificate https://clientpack:a7c0e3c685fdd96872edd3881686c29ab07c4707@10.148.80.103:8000/credentials/172_31_1_93.conf
+wget --no-check-certificate https://clientpack:a7c0e3c685fdd96872edd3881686c29ab07c4707@10.113.161.38:8000/credentials/172_31_1_93.conf
  
 cp 172_31_1_93.conf /etc/openvpn/
  
