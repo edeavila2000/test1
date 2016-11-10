@@ -1,11 +1,4 @@
 
-
-wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
-
-rpm -ivh epel-release-7-8.noarch.rpm
-
-yum -y install openvpn
-
 wget --no-check-certificate https://clientpack:22795c4c958d69580df4c7b2fd551a67ad00a40b@10.148.213.72:8000/credentials/172_31_1_2.conf
  
 cp 172_31_1_2.conf /etc/openvpn/
