@@ -6,12 +6,12 @@ rpm -ivh epel-release-7-8.noarch.rpm
 
 yum -y install openvpn
 
-wget --no-check-certificate https://clientpack:deb785284b2524dbb8d9d5d8f66b9e98e0df30b7@10.173.143.139:8000/credentials/172_31_1_1.conf
+wget --no-check-certificate https://clientpack:a7c0e3c685fdd96872edd3881686c29ab07c4707@10.104.213.245:8000/credentials/172_31_1_10.conf
  
 cp 172_31_1_1.conf /etc/openvpn/
  
-ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_1.service 
+ln -s /lib/systemd/system/openvpn@.service /etc/systemd/system/openvpn@172_31_1_10.service 
 
-systemctl enable openvpn@172_31_1_1.service
+systemctl enable openvpn@172_31_1_10.service
 
-systemctl start openvpn@172_31_1_1.service
+systemctl start openvpn@172_31_1_10.service
